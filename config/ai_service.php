@@ -14,6 +14,9 @@ if (!defined('AI_MICROSERVICE_URL')) {
             }
         }
     }
+    if (empty($url)) {
+        $url = 'https://iso-qa-ai-service.onrender.com';
+    }
     define('AI_MICROSERVICE_URL', rtrim($url, '/'));
 }
 
