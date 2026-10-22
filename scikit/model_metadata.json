@@ -1,0 +1,25 @@
+{
+    "features": [
+        "documents_count",
+        "major_nc_count",
+        "minor_nc_count",
+        "conformity_count",
+        "capas_count",
+        "unsigned_docs_count",
+        "draft_docs_count",
+        "unsigned_ratio",
+        "capa_closure_ratio",
+        "evidence_completeness",
+        "clause_4_risk",
+        "clause_5_risk",
+        "clause_6_risk",
+        "clause_7_risk",
+        "clause_8_risk",
+        "clause_9_risk",
+        "clause_10_risk"
+    ],
+    "n_estimators": 150,
+    "r2_score": 0.9912,
+    "mse": 5.7216,
+    "samples_trained": 1000
+}

@@ -1,0 +1,15 @@
+USE iso_iqa;
+
+CREATE TABLE IF NOT EXISTS documents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    office_id INT NOT NULL,
+    filename VARCHAR(255) NOT NULL,
+    file_path VARCHAR(255) NOT NULL,
+    file_size INT NOT NULL,
+    clause INT NOT NULL DEFAULT 8,
+    upload_token VARCHAR(64) NULL,
+    ai_comment TEXT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (office_id) REFERENCES offices(id) ON DELETE CASCADE
+);
