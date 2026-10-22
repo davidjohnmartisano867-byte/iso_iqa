@@ -1,6 +1,5 @@
 <?php
 
-// Auto-detect local development vs InfinityFree production
 $is_local = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', '127.0.0.1']) || 
             (isset($_SERVER['SERVER_NAME']) && in_array($_SERVER['SERVER_NAME'], ['localhost', '127.0.0.1'])) ||
             (php_sapi_name() === 'cli');
